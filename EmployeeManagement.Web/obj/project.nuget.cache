@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "9/SNKPdcrg7lx9OwjXmouWHg/IBzixqBWu+ZYeXqtbcLWNwPLRYhWItJe7OsKeDb7fCm3wy1XS2Nl2nk7XxaDA==",
+  "dgSpecHash": "U5pFz141UsC4E77uyZR1cxgPewl7oBnW9B4+7Zs1d73MpsrXIckIoAWxVqO6L1n0RpIsGV89fx24fws9jYOtvw==",
   "success": true,
   "projectFilePath": "C:\\Users\\mtkat\\source\\repos\\BlazorTutorial\\EmployeeManagement.Web\\EmployeeManagement.Web.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\mtkat\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
