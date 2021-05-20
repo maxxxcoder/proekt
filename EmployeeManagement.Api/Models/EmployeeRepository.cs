@@ -1,8 +1,6 @@
 ﻿using EmployeeManagement.Models;
 using Microsoft.EntityFrameworkCore;
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace EmployeeManagement.Api.Models
@@ -70,17 +68,22 @@ namespace EmployeeManagement.Api.Models
 
         public Task<Employee> GetEmployeeByEmail(string email)
         {
-            throw new NotImplementedException();
+            throw new System.NotImplementedException();
+        }
+
+        Task<Employee> IEmployeeRepository.DeleteEmployee(int employeeId)
+        {
+            throw new System.NotImplementedException();
         }
 
         public object GetEmployeeByEmail(object email)
         {
-            throw new NotImplementedException();
+            throw new System.NotImplementedException();
         }
 
         public Task AddEmployee(object employee)
         {
-            throw new NotImplementedException();
+            throw new System.NotImplementedException();
         }
     }
 }
