@@ -67,5 +67,20 @@ namespace EmployeeManagement.Api.Models
                 await appDbContext.SaveChangesAsync();
             }
         }
+
+        public Task<Employee> GetEmployeeByEmail(string email)
+        {
+            throw new NotImplementedException();
+        }
+
+        public object GetEmployeeByEmail(object email)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task AddEmployee(object employee)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
