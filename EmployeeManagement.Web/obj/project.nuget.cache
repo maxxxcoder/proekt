@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "U5pFz141UsC4E77uyZR1cxgPewl7oBnW9B4+7Zs1d73MpsrXIckIoAWxVqO6L1n0RpIsGV89fx24fws9jYOtvw==",
+  "dgSpecHash": "hPG3fJ9C0EwLb7UYjuKeKkMcx0VUX0XivDZBK1vtQ+O/05ZN+tcgqzbsWKjT2T9gnqUa/tLXwkJzxezdTejZgg==",
   "success": true,
   "projectFilePath": "C:\\Users\\mtkat\\source\\repos\\BlazorTutorial\\EmployeeManagement.Web\\EmployeeManagement.Web.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\mtkat\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+    "C:\\Users\\mtkat\\.nuget\\packages\\microsoft.aspnetcore.blazor.httpclient\\3.2.0-preview3.20168.3\\microsoft.aspnetcore.blazor.httpclient.3.2.0-preview3.20168.3.nupkg.sha512",
+    "C:\\Users\\mtkat\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
+    "C:\\Users\\mtkat\\.nuget\\packages\\system.text.json\\4.7.1\\system.text.json.4.7.1.nupkg.sha512"
   ],
   "logs": []
 }

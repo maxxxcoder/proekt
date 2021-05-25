@@ -52,3 +52,4 @@ C:\Users\mtkat\source\repos\BlazorTutorial\EmployeeManagement.Web\obj\Debug\net5
 C:\Users\mtkat\source\repos\BlazorTutorial\EmployeeManagement.Web\obj\Debug\net5.0\ref\EmployeeManagement.Web.dll
 C:\Users\mtkat\source\repos\BlazorTutorial\EmployeeManagement.Web\obj\Debug\net5.0\EmployeeManagement.Web.pdb
 C:\Users\mtkat\source\repos\BlazorTutorial\EmployeeManagement.Web\obj\Debug\net5.0\EmployeeManagement.Web.genruntimeconfig.cache
+C:\Users\mtkat\source\repos\BlazorTutorial\EmployeeManagement.Web\bin\Debug\net5.0\Microsoft.AspNetCore.Blazor.HttpClient.dll
