@@ -1,18 +1,13 @@
 ﻿@page "/databindingdemo"
 @inherits DataBindingDemoBase
 
-    <h1>Data Binding </h1>
+<h3>Two Way Data Binding</h3>
 <hr />
-<h3>One Way Data Binding</h3>
+<b>Description</b>
 
 <div>
-    <b>Name :</b> @Name
+    <textarea @bind="Description" @bind:event="oninput" style="width:500px" />
 </div>
-
 <div>
-    <b>Name with salutation:</b> @(Gender == "Male" ? $"Mr. {Name}" : $"Miss. {Name}")
-</div>
-
-<div>
-    <b>Name :</b> <input value="@Name" />
+    Count : @Description.Length
 </div>
