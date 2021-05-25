@@ -96,30 +96,13 @@ using EmployeeManagement.Models;
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/pc")]
-    public partial class ParentComponent : Microsoft.AspNetCore.Components.ComponentBase
+    public partial class GrandChildComponent : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
         }
         #pragma warning restore 1998
-#nullable restore
-#line 17 "C:\Users\mtkat\source\repos\BlazorTutorial\EmployeeManagement.Web\Pages\ParentComponent.razor"
-           
-        public string Style { get; set; } = "color:red";
-        public string BorderStyle { get; set; } = "border:1px solid red";
-        public int Counter { get; set; } = 0;
-
-        private void IncrementCounter()
-        {
-            Counter = Counter + 1;
-        }
-    
-
-#line default
-#line hidden
-#nullable disable
     }
 }
 #pragma warning restore 1591

@@ -103,6 +103,21 @@ using EmployeeManagement.Models;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 5 "C:\Users\mtkat\source\repos\BlazorTutorial\EmployeeManagement.Web\Pages\ChildComponent.razor"
+       
+    [CascadingParameter(Name = "ColorStyle")]
+    public string ElementStyle { get; set; }
+
+    [CascadingParameter(Name = "BorderStyle")]
+    public string H1Border { get; set; }
+
+    [CascadingParameter(Name = "Counter")]
+    public int Counter { get; set; }
+
+#line default
+#line hidden
+#nullable disable
     }
 }
 #pragma warning restore 1591
