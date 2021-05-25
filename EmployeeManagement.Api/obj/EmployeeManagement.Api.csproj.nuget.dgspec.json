@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mtkat\\source\\repos\\BlazorTutorial\\EmployeeManagement.Api\\EmployeeManagement.Api.csproj": {}
+    "C:\\Users\\mtkat\\Desktop\\BlazorTutorial\\EmployeeManagement.Api\\EmployeeManagement.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mtkat\\source\\repos\\BlazorTutorial\\EmployeeManagement.Api\\EmployeeManagement.Api.csproj": {
+    "C:\\Users\\mtkat\\Desktop\\BlazorTutorial\\EmployeeManagement.Api\\EmployeeManagement.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mtkat\\source\\repos\\BlazorTutorial\\EmployeeManagement.Api\\EmployeeManagement.Api.csproj",
+        "projectUniqueName": "C:\\Users\\mtkat\\Desktop\\BlazorTutorial\\EmployeeManagement.Api\\EmployeeManagement.Api.csproj",
         "projectName": "EmployeeManagement.Api",
-        "projectPath": "C:\\Users\\mtkat\\source\\repos\\BlazorTutorial\\EmployeeManagement.Api\\EmployeeManagement.Api.csproj",
+        "projectPath": "C:\\Users\\mtkat\\Desktop\\BlazorTutorial\\EmployeeManagement.Api\\EmployeeManagement.Api.csproj",
         "packagesPath": "C:\\Users\\mtkat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mtkat\\source\\repos\\BlazorTutorial\\EmployeeManagement.Api\\obj\\",
+        "outputPath": "C:\\Users\\mtkat\\Desktop\\BlazorTutorial\\EmployeeManagement.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -22,21 +22,18 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "netcoreapp3.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\mtkat\\source\\repos\\BlazorTutorial\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj": {
-                "projectPath": "C:\\Users\\mtkat\\source\\repos\\BlazorTutorial\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj"
-              },
-              "C:\\Users\\mtkat\\source\\repos\\BlazorTutorial\\PragimTech.Components\\PragimTech.Components.csproj": {
-                "projectPath": "C:\\Users\\mtkat\\source\\repos\\BlazorTutorial\\PragimTech.Components\\PragimTech.Components.csproj"
+              "C:\\Users\\mtkat\\Desktop\\BlazorTutorial\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj": {
+                "projectPath": "C:\\Users\\mtkat\\Desktop\\BlazorTutorial\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj"
               }
             }
           }
@@ -48,22 +45,18 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[5.0.6, )"
+              "version": "[3.1.3, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.6, )"
-            },
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[5.6.3, )"
+              "version": "[3.1.3, )"
             }
           },
           "imports": [
@@ -88,14 +81,14 @@
         }
       }
     },
-    "C:\\Users\\mtkat\\source\\repos\\BlazorTutorial\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj": {
+    "C:\\Users\\mtkat\\Desktop\\BlazorTutorial\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mtkat\\source\\repos\\BlazorTutorial\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj",
+        "projectUniqueName": "C:\\Users\\mtkat\\Desktop\\BlazorTutorial\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj",
         "projectName": "EmployeeManagement.Models",
-        "projectPath": "C:\\Users\\mtkat\\source\\repos\\BlazorTutorial\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj",
+        "projectPath": "C:\\Users\\mtkat\\Desktop\\BlazorTutorial\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj",
         "packagesPath": "C:\\Users\\mtkat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mtkat\\source\\repos\\BlazorTutorial\\EmployeeManagement.Models\\obj\\",
+        "outputPath": "C:\\Users\\mtkat\\Desktop\\BlazorTutorial\\EmployeeManagement.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -128,10 +121,6 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "dependencies": {
-            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
-              "target": "Package",
-              "version": "[8.1.1, )"
-            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
@@ -140,7 +129,7 @@
             },
             "System.ComponentModel.Annotations": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[4.7.0, )"
             }
           },
           "imports": [
@@ -153,70 +142,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\mtkat\\source\\repos\\BlazorTutorial\\PragimTech.Components\\PragimTech.Components.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\mtkat\\source\\repos\\BlazorTutorial\\PragimTech.Components\\PragimTech.Components.csproj",
-        "projectName": "PragimTech.Components",
-        "projectPath": "C:\\Users\\mtkat\\source\\repos\\BlazorTutorial\\PragimTech.Components\\PragimTech.Components.csproj",
-        "packagesPath": "C:\\Users\\mtkat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mtkat\\source\\repos\\BlazorTutorial\\PragimTech.Components\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\mtkat\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net5.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
-          "dependencies": {
-            "Microsoft.AspNetCore.Components.Web": {
-              "target": "Package",
-              "version": "[5.0.2, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }

@@ -1,8 +1,10 @@
-﻿using EmployeeManagement.Models;
-using Microsoft.AspNetCore.Components;
+﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
+using EmployeeManagement.Models;
+using Microsoft.AspNetCore.Components;
 
 namespace EmployeeManagement.Web.Services
 {
@@ -15,14 +17,14 @@ namespace EmployeeManagement.Web.Services
             this.httpClient = httpClient;
         }
 
-        public Task<Employee> CreateEmployee(Employee employee)
+        public async Task<Employee> CreateEmployee(Employee newEmployee)
         {
-            throw new System.NotImplementedException();
+            return await httpClient.PostJsonAsync<Employee>("api/employees", newEmployee);
         }
 
-        public Task DeleteEmployee(int employeeId)
+        public async Task DeleteEmployee(int id)
         {
-            throw new System.NotImplementedException();
+            await httpClient.DeleteAsync($"api/employees/{id}");
         }
 
         public async Task<Employee> GetEmployee(int id)

@@ -1,10 +1,10 @@
-﻿using EmployeeManagement.Models;
-using Microsoft.AspNetCore.Components;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
+using EmployeeManagement.Models;
+using Microsoft.AspNetCore.Components;
 
 namespace EmployeeManagement.Web.Services
 {
@@ -25,16 +25,6 @@ namespace EmployeeManagement.Web.Services
         public async Task<IEnumerable<Department>> GetDepartments()
         {
             return await httpClient.GetJsonAsync<Department[]>("api/departments");
-        }
-
-        Task<Department> IDepartmentService.GetDepartment(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        Task<IEnumerable<Department>> IDepartmentService.GetDepartments()
-        {
-            throw new NotImplementedException();
         }
     }
 }

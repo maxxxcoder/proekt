@@ -1,5 +1,7 @@
 ﻿using EmployeeManagement.Models;
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace EmployeeManagement.Api.Models
@@ -13,7 +15,5 @@ namespace EmployeeManagement.Api.Models
         Task<Employee> AddEmployee(Employee employee);
         Task<Employee> UpdateEmployee(Employee employee);
         Task<Employee> DeleteEmployee(int employeeId);
-        object GetEmployeeByEmail(object email);
-        Task AddEmployee(object employee);
     }
 }

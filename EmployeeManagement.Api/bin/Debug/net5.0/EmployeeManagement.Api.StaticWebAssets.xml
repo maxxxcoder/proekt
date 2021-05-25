@@ -1,5 +1,0 @@
-﻿<StaticWebAssets Version="1.0">
-  <ContentRoot BasePath="/" Path="C:\Users\mtkat\source\repos\BlazorTutorial\EmployeeManagement.Api\obj\Debug\net5.0\scopedcss\bundle\" />
-  <ContentRoot BasePath="_content/PragimTech.Components" Path="C:\Users\mtkat\source\repos\BlazorTutorial\PragimTech.Components\obj\Debug\net5.0\scopedcss\projectbundle\" />
-  <ContentRoot BasePath="_content/PragimTech.Components" Path="C:\Users\mtkat\source\repos\BlazorTutorial\PragimTech.Components\wwwroot\" />
-</StaticWebAssets>

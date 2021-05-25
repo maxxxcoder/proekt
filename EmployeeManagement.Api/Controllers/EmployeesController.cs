@@ -19,6 +19,7 @@ namespace EmployeeManagement.Api.Controllers
         {
             this.employeeRepository = employeeRepository;
         }
+
         [HttpGet("{search}")]
         public async Task<ActionResult<IEnumerable<Employee>>> Search(string name, Gender? gender)
         {
@@ -26,7 +27,7 @@ namespace EmployeeManagement.Api.Controllers
             {
                 var result = await employeeRepository.Search(name, gender);
 
-                if (result.Any())
+                if(result.Any())
                 {
                     return Ok(result);
                 }
@@ -36,7 +37,7 @@ namespace EmployeeManagement.Api.Controllers
             catch (Exception)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError,
-                    "Error retrieving data from the database");
+                "Error retrieving data from the database");
             }
         }
 
@@ -80,14 +81,14 @@ namespace EmployeeManagement.Api.Controllers
         {
             try
             {
-                if (employee == null)
+                if(employee == null)
                 {
                     return BadRequest();
-                }
-
-                var emp = employeeRepository.GetEmployeeByEmail(employee.Email);
-
-                if (emp != null)
+                } 
+                
+                var emp = await employeeRepository.GetEmployeeByEmail(employee.Email);
+                
+                if(emp != null)
                 {
                     ModelState.AddModelError("email", "Employee email already in use");
                     return BadRequest(ModelState);
@@ -105,21 +106,16 @@ namespace EmployeeManagement.Api.Controllers
             }
         }
 
-        [HttpPut("{id:int}")]
-        public async Task<ActionResult<Employee>> UpdateEmployee(int id, Employee employee)
+        [HttpPut()]
+        public async Task<ActionResult<Employee>> UpdateEmployee(Employee employee)
         {
             try
             {
-                if (id != employee.EmployeeId)
-                {
-                    return BadRequest("Employee ID mismatch");
-                }
+                var employeeToUpdate = await employeeRepository.GetEmployee(employee.EmployeeId);
 
-                var employeeToUpdate = await employeeRepository.GetEmployee(id);
-
-                if (employeeToUpdate == null)
+                if(employeeToUpdate == null)
                 {
-                    return NotFound($"Employee with Id = {id} not found");
+                    return NotFound($"Employee with Id = {employee.EmployeeId} not found");
                 }
 
                 return await employeeRepository.UpdateEmployee(employee);
