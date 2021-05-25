@@ -104,11 +104,24 @@ using EmployeeManagement.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 18 "C:\Users\mtkat\source\repos\BlazorTutorial\EmployeeManagement.Web\Shared\NavMenu.razor"
+#line 45 "C:\Users\mtkat\source\repos\BlazorTutorial\EmployeeManagement.Web\Shared\NavMenu.razor"
        
     private bool collapseNavMenu = true;
 
     private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 51 "C:\Users\mtkat\source\repos\BlazorTutorial\EmployeeManagement.Web\Shared\NavMenu.razor"
+
+    private void HandleClick()
+    {
+        NavigationManager.NavigateTo("editemployee", true);
+    }
 
     private void ToggleNavMenu()
     {
@@ -118,6 +131,7 @@ using EmployeeManagement.Models;
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
     }
 }
 #pragma warning restore 1591
