@@ -2,8 +2,10 @@
 
 @inherits EditEmployeeBase
 
-<EditForm Model="@Employee">
-    <DataAnnotationsValidator />
+<<EditForm Model="@Employee">
+    <ObjectGraphDataAnnotationsValidator />
+    <InputText id="firstName" @bind-Value="EditEmployeeModel.FirstName" />
+    <ValidationMessage For="@(() => EditEmployeeModel.FirstName)" />
     <h3>Edit Employee</h3>
     <hr />
     <ValidationSummary />

@@ -1,16 +1,27 @@
-﻿using System;
+﻿using EmployeeManagement.Models.CustomValidators;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
+using System.Text;
 
-namespace EmployeeManagement.Web.Models
+namespace EmployeeManagement.Models
 {
-    public class EditEmployeeModel
+    public class Employee
     {
+        public int EmployeeId { get; set; }
+        [Required(ErrorMessage = "FirstName is mandatory")]
+        [MinLength(2)]
+        public string FirstName { get; set; }
+        [Required]
+        public string LastName { get; set; }
+        [EmailAddress]
+        [EmailDomainValidator(AllowedDomain = "pragimtech.com")]
         public string Email { get; set; }
-        [CompareProperty("Email",
-            ErrorMessage = "Email and Confirm Email must match")]
         public string ConfirmEmail { get; set; }
-        // Other properties
+        public DateTime DateOfBrith { get; set; }
+        public Gender Gender { get; set; }
+        public int DepartmentId { get; set; }
+        public Department Department { get; set; }
+        public string PhotoPath { get; set; }
     }
 }
