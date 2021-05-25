@@ -96,7 +96,6 @@ using EmployeeManagement.Models;
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/pc")]
     public partial class ParentComponent : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -105,17 +104,16 @@ using EmployeeManagement.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 17 "C:\Users\mtkat\source\repos\BlazorTutorial\EmployeeManagement.Web\Pages\ParentComponent.razor"
-           
-        public string Style { get; set; } = "color:red";
-        public string BorderStyle { get; set; } = "border:1px solid red";
-        public int Counter { get; set; } = 0;
+#line 5 "C:\Users\mtkat\source\repos\BlazorTutorial\EmployeeManagement.Web\Pages\ParentComponent.razor"
+       
+    [CascadingParameter(Name = "ColorStyle")]
+    public string ElementStyle { get; set; }
 
-        private void IncrementCounter()
-        {
-            Counter = Counter + 1;
-        }
-    
+    [CascadingParameter(Name = "BorderStyle")]
+    public string H1Border { get; set; }
+
+    [CascadingParameter(Name = "Counter")]
+    public int Counter { get; set; }
 
 #line default
 #line hidden

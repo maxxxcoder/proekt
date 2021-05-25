@@ -59,3 +59,6 @@ C:\Users\mtkat\source\repos\BlazorTutorial\EmployeeManagement.Web\obj\Debug\net5
 C:\Users\mtkat\source\repos\BlazorTutorial\EmployeeManagement.Web\obj\Debug\net5.0\RazorDeclaration\Pages\DisplayEmployee.razor.g.cs
 C:\Users\mtkat\source\repos\BlazorTutorial\EmployeeManagement.Web\obj\Debug\net5.0\RazorDeclaration\Pages\EditEmployee.razor.g.cs
 C:\Users\mtkat\source\repos\BlazorTutorial\EmployeeManagement.Web\obj\Debug\net5.0\RazorDeclaration\Pages\Error.razor.g.cs
+C:\Users\mtkat\source\repos\BlazorTutorial\EmployeeManagement.Web\obj\Debug\net5.0\RazorDeclaration\Pages\ChildComponent.razor.g.cs
+C:\Users\mtkat\source\repos\BlazorTutorial\EmployeeManagement.Web\obj\Debug\net5.0\RazorDeclaration\Pages\GrandChildComponent.razor.g.cs
+C:\Users\mtkat\source\repos\BlazorTutorial\EmployeeManagement.Web\obj\Debug\net5.0\RazorDeclaration\Pages\ParentComponent.razor.g.cs
