@@ -82,7 +82,7 @@ using EmployeeManagement.Web.Shared;
 #line default
 #line hidden
 #nullable disable
-    public partial class DisplayEmployee : DisplayEmployeeBase
+    public partial class EditEmployee : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
