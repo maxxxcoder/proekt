@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeManagement.Web", "E
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeManagement.Api", "EmployeeManagement.Api\EmployeeManagement.Api.csproj", "{32A57B2E-8E33-451F-9D93-436A4D44B911}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PragimTech.Components", "PragimTech.Components\PragimTech.Components.csproj", "{17BB97A6-A7CB-4A32-A8D4-7305933BB021}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PragimTech.Components", "PragimTech.Components\PragimTech.Components.csproj", "{17BB97A6-A7CB-4A32-A8D4-7305933BB021}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
