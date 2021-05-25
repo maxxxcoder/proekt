@@ -1,12 +1,11 @@
 ﻿@page "/editemployee/{id}"
+@page "/editemployee"
 
 @inherits EditEmployeeBase
 
-<<EditForm Model="@Employee">
+<EditForm Model="@EditEmployeeModel" OnValidSubmit="HandleValidSubmit">
     <ObjectGraphDataAnnotationsValidator />
-    <InputText id="firstName" @bind-Value="EditEmployeeModel.FirstName" />
-    <ValidationMessage For="@(() => EditEmployeeModel.FirstName)" />
-    <h3>Edit Employee</h3>
+    <h3>@PageHeaderText</h3>
     <hr />
     <ValidationSummary />
     <div class="form-group row">
@@ -15,8 +14,8 @@
         </label>
         <div class="col-sm-10">
             <InputText id="firstName" class="form-control" placeholder="First Name"
-                       @bind-Value="Employee.FirstName" />
-            <ValidationMessage For="@(() => Employee.FirstName)" />
+                       @bind-Value="EditEmployeeModel.FirstName" />
+            <ValidationMessage For="@(() => EditEmployeeModel.FirstName)" />
         </div>
     </div>
     <div class="form-group row">
@@ -25,8 +24,8 @@
         </label>
         <div class="col-sm-10">
             <InputText id="lastName" class="form-control" placeholder="Last Name"
-                       @bind-Value="Employee.LastName" />
-            <ValidationMessage For="@(() => Employee.LastName)" />
+                       @bind-Value="EditEmployeeModel.LastName" />
+            <ValidationMessage For="@(() => EditEmployeeModel.LastName)" />
         </div>
     </div>
     <div class="form-group row">
@@ -35,8 +34,18 @@
         </label>
         <div class="col-sm-10">
             <InputText id="email" class="form-control" placeholder="Email"
-                       @bind-Value="Employee.Email" />
-            <ValidationMessage For="@(() => Employee.Email)" />
+                       @bind-Value="EditEmployeeModel.Email" />
+            <ValidationMessage For="@(() => EditEmployeeModel.Email)" />
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="confirmEmail" class="col-sm-2 col-form-label">
+            Confirm Email
+        </label>
+        <div class="col-sm-10">
+            <InputText id="confirmEmail" class="form-control"
+                       @bind-Value="EditEmployeeModel.ConfirmEmail" />
+            <ValidationMessage For="@(() => EditEmployeeModel.ConfirmEmail)" />
         </div>
     </div>
     <div class="form-group row">
@@ -44,10 +53,13 @@
             Department
         </label>
         <div class="col-sm-10">
-            <CustomInputSelect @bind-Value="Employee.DepartmentId" class="form-control">
+            <CustomInputSelect @bind-Value="EditEmployeeModel.DepartmentId"
+                               class="form-control">
                 @foreach (var dept in Departments)
                 {
-                    <option value="@dept.DepartmentId">@dept.DepartmentName</option>
+                    <option value="@dept.DepartmentId">
+                        @dept.DepartmentName
+                    </option>
                 }
             </CustomInputSelect>
         </div>
@@ -57,7 +69,7 @@
             Gender
         </label>
         <div class="col-sm-10">
-            <InputSelect @bind-Value="Employee.Gender" class="form-control">
+            <InputSelect @bind-Value="EditEmployeeModel.Gender" class="form-control">
                 @foreach (var gender in Enum.GetValues(typeof(Gender)))
                 {
                     <option value="@gender">@gender</option>
@@ -70,7 +82,26 @@
             Date Of Birth
         </label>
         <div class="col-sm-10">
-            <InputDate @bind-Value="Employee.DateOfBrith" class="form-control" />
+            <InputDate @bind-Value="EditEmployeeModel.DateOfBrith" class="form-control" />
         </div>
     </div>
+    @*<div class="form-group row">
+            <label for="deptName" class="col-sm-2 col-form-label">
+                Department Name
+            </label>
+            <div id="deptName" class="col-sm-10">
+                <InputText @bind-Value="EditEmployeeModel.Department.DepartmentName"
+                           class="form-control" />
+                <ValidationMessage For="@(() => EditEmployeeModel.Department.DepartmentName)" />
+            </div>
+        </div>*@
+    <button class="btn btn-primary" type="submit">Submit</button>
+    @if (EditEmployeeModel.EmployeeId > 0)
+    {
+        <button class="btn btn-danger" type="button" @onclick="Delete_Click">Delete</button>
+    }
 </EditForm>
+
+<Confirm @ref="DeleteConfirmation" ConfirmationChanged="ConfirmDelete_Click"
+         ConfirmationMessage=@($"Are you sure you want to delete \"{EditEmployeeModel.FirstName}\"")>
+</Confirm>

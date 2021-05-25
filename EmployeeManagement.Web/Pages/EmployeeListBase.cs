@@ -1,6 +1,7 @@
 ﻿using EmployeeManagement.Models;
 using EmployeeManagement.Web.Services;
 using Microsoft.AspNetCore.Components;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -12,11 +13,16 @@ namespace EmployeeManagement.Web.Pages
         [Inject]
         public IEmployeeService EmployeeService { get; set; }
 
-        public IEnumerable<Employee> Employees { get; set; }
-
         public bool ShowFooter { get; set; } = true;
 
+        public IEnumerable<Employee> Employees { get; set; }
+
         protected override async Task OnInitializedAsync()
+        {
+            Employees = (await EmployeeService.GetEmployees()).ToList();
+        }
+
+        protected async Task EmployeeDeleted()
         {
             Employees = (await EmployeeService.GetEmployees()).ToList();
         }

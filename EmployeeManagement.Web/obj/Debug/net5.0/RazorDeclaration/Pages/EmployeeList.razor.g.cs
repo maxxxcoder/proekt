@@ -96,6 +96,13 @@ using EmployeeManagement.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 4 "C:\Users\mtkat\source\repos\BlazorTutorial\EmployeeManagement.Web\Pages\EmployeeList.razor"
+           [Authorize]
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/")]
     public partial class EmployeeList : EmployeeListBase
     {

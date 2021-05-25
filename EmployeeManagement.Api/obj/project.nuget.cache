@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "9HCkNDheGZ9tCEHHNiLLMaRQmMwtfqpENXCVerCFfVR7dY2ju9qFiR4lv/9b9/3UvNzfPETzpNx0PuWZPqXtfQ==",
+  "dgSpecHash": "LAkNcezWzZHX/ivDjyRZXco6zYymxgnxIx9cAA8EfV+GDJ3uO/NTnW3DThuPFALJmtUmQCxByuC9bG/dIp1cXw==",
   "success": true,
   "projectFilePath": "C:\\Users\\mtkat\\source\\repos\\BlazorTutorial\\EmployeeManagement.Api\\EmployeeManagement.Api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\mtkat\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\mtkat\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
     "C:\\Users\\mtkat\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\mtkat\\.nuget\\packages\\microsoft.aspnetcore.authorization\\5.0.2\\microsoft.aspnetcore.authorization.5.0.2.nupkg.sha512",
     "C:\\Users\\mtkat\\.nuget\\packages\\microsoft.aspnetcore.components\\5.0.2\\microsoft.aspnetcore.components.5.0.2.nupkg.sha512",
@@ -80,7 +82,7 @@
     "C:\\Users\\mtkat\\.nuget\\packages\\system.private.datacontractserialization\\4.3.0\\system.private.datacontractserialization.4.3.0.nupkg.sha512",
     "C:\\Users\\mtkat\\.nuget\\packages\\system.private.uri\\4.3.2\\system.private.uri.4.3.2.nupkg.sha512",
     "C:\\Users\\mtkat\\.nuget\\packages\\system.reflection\\4.3.0\\system.reflection.4.3.0.nupkg.sha512",
-    "C:\\Users\\mtkat\\.nuget\\packages\\system.reflection.emit\\4.3.0\\system.reflection.emit.4.3.0.nupkg.sha512",
+    "C:\\Users\\mtkat\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
     "C:\\Users\\mtkat\\.nuget\\packages\\system.reflection.emit.ilgeneration\\4.3.0\\system.reflection.emit.ilgeneration.4.3.0.nupkg.sha512",
     "C:\\Users\\mtkat\\.nuget\\packages\\system.reflection.emit.lightweight\\4.3.0\\system.reflection.emit.lightweight.4.3.0.nupkg.sha512",
     "C:\\Users\\mtkat\\.nuget\\packages\\system.reflection.extensions\\4.3.0\\system.reflection.extensions.4.3.0.nupkg.sha512",

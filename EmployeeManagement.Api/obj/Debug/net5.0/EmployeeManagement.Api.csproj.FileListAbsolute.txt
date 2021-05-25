@@ -61,3 +61,14 @@ C:\Users\mtkat\source\repos\BlazorTutorial\EmployeeManagement.Api\bin\Debug\net5
 C:\Users\mtkat\source\repos\BlazorTutorial\EmployeeManagement.Api\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
 C:\Users\mtkat\source\repos\BlazorTutorial\EmployeeManagement.Api\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\mtkat\source\repos\BlazorTutorial\EmployeeManagement.Api\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\mtkat\source\repos\BlazorTutorial\EmployeeManagement.Api\bin\Debug\net5.0\PragimTech.Components.StaticWebAssets.xml
+C:\Users\mtkat\source\repos\BlazorTutorial\EmployeeManagement.Api\bin\Debug\net5.0\EmployeeManagement.Api.StaticWebAssets.xml
+C:\Users\mtkat\source\repos\BlazorTutorial\EmployeeManagement.Api\bin\Debug\net5.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\mtkat\source\repos\BlazorTutorial\EmployeeManagement.Api\bin\Debug\net5.0\Microsoft.AspNetCore.Components.dll
+C:\Users\mtkat\source\repos\BlazorTutorial\EmployeeManagement.Api\bin\Debug\net5.0\Microsoft.AspNetCore.Components.Forms.dll
+C:\Users\mtkat\source\repos\BlazorTutorial\EmployeeManagement.Api\bin\Debug\net5.0\Microsoft.AspNetCore.Components.Web.dll
+C:\Users\mtkat\source\repos\BlazorTutorial\EmployeeManagement.Api\bin\Debug\net5.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\mtkat\source\repos\BlazorTutorial\EmployeeManagement.Api\bin\Debug\net5.0\Microsoft.JSInterop.dll
+C:\Users\mtkat\source\repos\BlazorTutorial\EmployeeManagement.Api\bin\Debug\net5.0\System.IO.Pipelines.dll
+C:\Users\mtkat\source\repos\BlazorTutorial\EmployeeManagement.Api\bin\Debug\net5.0\PragimTech.Components.dll
+C:\Users\mtkat\source\repos\BlazorTutorial\EmployeeManagement.Api\bin\Debug\net5.0\PragimTech.Components.pdb

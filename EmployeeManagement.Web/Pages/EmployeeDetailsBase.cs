@@ -2,6 +2,9 @@
 using EmployeeManagement.Web.Services;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace EmployeeManagement.Web.Pages
@@ -11,6 +14,7 @@ namespace EmployeeManagement.Web.Pages
         public Employee Employee { get; set; } = new Employee();
 
         protected string Coordinates { get; set; }
+
         protected string ButtonText { get; set; } = "Hide Footer";
         protected string CssClass { get; set; } = null;
 
@@ -40,9 +44,9 @@ namespace EmployeeManagement.Web.Pages
             }
         }
 
-        protected void Mouse_Move(MouseEventArgs e)
-        {
-            Coordinates = $"X = {e.ClientX } Y = {e.ClientY}";
-        }
+        //protected void Mouse_Move(MouseEventArgs e)
+        //{
+        //    Coordinates = $"X = {e.ClientX} Y = {e.ClientY}";
+        //}
     }
 }
